@@ -1,0 +1,181 @@
+警告: 二进制文件Hello包含jvm01.Hello
+Classfile /Users/limitsy/Documents/workspace/learning-forever/target/classes/jvm01/Hello.class
+  Last modified 2021-8-7; size 1175 bytes
+  MD5 checksum 616acb1e5d158d0d2aab77bef521143e
+  Compiled from "Hello.java"
+public class jvm01.Hello
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #21.#46        // java/lang/Object."<init>":()V
+   #2 = Double             2.0d
+   #4 = Long               3l
+   #6 = String             #47            //
+   #7 = Methodref          #48.#49        // java/lang/String.length:()I
+   #8 = Fieldref           #50.#51        // java/lang/System.out:Ljava/io/PrintStream;
+   #9 = Class              #52            // java/lang/StringBuilder
+  #10 = Methodref          #9.#46         // java/lang/StringBuilder."<init>":()V
+  #11 = String             #53            // 错误用法: num2 + num3 =
+  #12 = Methodref          #9.#54         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #13 = Methodref          #9.#55         // java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+  #14 = Methodref          #9.#56         // java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+  #15 = Methodref          #9.#57         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #16 = Methodref          #58.#59        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #17 = String             #60            // 四则运算: num1 * num4 =
+  #18 = Methodref          #58.#61        // java/io/PrintStream.print:(Ljava/lang/String;)V
+  #19 = Methodref          #58.#62        // java/io/PrintStream.println:(I)V
+  #20 = Class              #63            // jvm01/Hello
+  #21 = Class              #64            // java/lang/Object
+  #22 = Utf8               <init>
+  #23 = Utf8               ()V
+  #24 = Utf8               Code
+  #25 = Utf8               LineNumberTable
+  #26 = Utf8               LocalVariableTable
+  #27 = Utf8               this
+  #28 = Utf8               Ljvm01/Hello;
+  #29 = Utf8               main
+  #30 = Utf8               ([Ljava/lang/String;)V
+  #31 = Utf8               i
+  #32 = Utf8               I
+  #33 = Utf8               args
+  #34 = Utf8               [Ljava/lang/String;
+  #35 = Utf8               num1
+  #36 = Utf8               num2
+  #37 = Utf8               D
+  #38 = Utf8               num3
+  #39 = Utf8               J
+  #40 = Utf8               num4
+  #41 = Utf8               B
+  #42 = Utf8               StackMapTable
+  #43 = Class              #34            // "[Ljava/lang/String;"
+  #44 = Utf8               SourceFile
+  #45 = Utf8               Hello.java
+  #46 = NameAndType        #22:#23        // "<init>":()V
+  #47 = Utf8
+  #48 = Class              #65            // java/lang/String
+  #49 = NameAndType        #66:#67        // length:()I
+  #50 = Class              #68            // java/lang/System
+  #51 = NameAndType        #69:#70        // out:Ljava/io/PrintStream;
+  #52 = Utf8               java/lang/StringBuilder
+  #53 = Utf8               错误用法: num2 + num3 =
+  #54 = NameAndType        #71:#72        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #55 = NameAndType        #71:#73        // append:(D)Ljava/lang/StringBuilder;
+  #56 = NameAndType        #71:#74        // append:(J)Ljava/lang/StringBuilder;
+  #57 = NameAndType        #75:#76        // toString:()Ljava/lang/String;
+  #58 = Class              #77            // java/io/PrintStream
+  #59 = NameAndType        #78:#79        // println:(Ljava/lang/String;)V
+  #60 = Utf8               四则运算: num1 * num4 =
+  #61 = NameAndType        #80:#79        // print:(Ljava/lang/String;)V
+  #62 = NameAndType        #78:#81        // println:(I)V
+  #63 = Utf8               jvm01/Hello
+  #64 = Utf8               java/lang/Object
+  #65 = Utf8               java/lang/String
+  #66 = Utf8               length
+  #67 = Utf8               ()I
+  #68 = Utf8               java/lang/System
+  #69 = Utf8               out
+  #70 = Utf8               Ljava/io/PrintStream;
+  #71 = Utf8               append
+  #72 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #73 = Utf8               (D)Ljava/lang/StringBuilder;
+  #74 = Utf8               (J)Ljava/lang/StringBuilder;
+  #75 = Utf8               toString
+  #76 = Utf8               ()Ljava/lang/String;
+  #77 = Utf8               java/io/PrintStream
+  #78 = Utf8               println
+  #79 = Utf8               (Ljava/lang/String;)V
+  #80 = Utf8               print
+  #81 = Utf8               (I)V
+{
+  public jvm01.Hello();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0                         // 第0个应用型变量加载到栈顶
+         1: invokespecial #1                // 调用父类构造方法  // Method java/lang/Object."<init>":()V
+         4: return                          // 返回
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Ljvm01/Hello;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=8, args_size=1
+         0: iconst_1                        // 第1个int型常量进栈
+         1: istore_1                        // 加载栈顶至第1个int型变量
+         2: ldc2_w        #2                // 2.0d 从常量池推送至栈顶  // double 2.0d
+         5: dstore_2                        // 加载栈顶至第2个double类型变量
+         6: ldc2_w        #4                // 3l 从常量池推送至栈顶  // long 3l
+         9: lstore        4                 // 加载栈顶至第4个变量
+        11: iconst_4                        // 第4个int常量进栈
+        12: istore        6                 // 加载栈顶至第6个变量
+        14: ldc           #6                // 将String从常量池推送至栈顶   // String
+        16: invokevirtual #7                // 调用length方法  // Method java/lang/String.length:()I
+        19: bipush        10                // byte型常量进栈
+        21: if_icmpge     54                // 如果 >= 10则跳转至54行
+        24: getstatic     #8                // 获取类的静态字段，将其值压入栈顶  // Field java/lang/System.out:Ljava/io/PrintStream;
+        27: new           #9                // 创建StringBuilder实例  // class java/lang/StringBuilder
+        30: dup                             // 复制栈顶数值，并压入栈顶
+        31: invokespecial #10               // 调用StringBuilder构造方法  // Method java/lang/StringBuilder."<init>":()V
+        34: ldc           #11               // 讲字符串"String 错误用法: num2 + num3 =" 推送至栈顶 // String 错误用法: num2 + num3 =
+        36: invokevirtual #12               // 调用append拼接栈顶字符串  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        39: dload_2                         // 第2个double类型变量
+        40: invokevirtual #13               // 调用append拼接栈顶字符串  // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+        43: lload         4                 // 第四个long类型变量入栈
+        45: invokevirtual #14               // 调用append拼接栈顶字符串  // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+        48: invokevirtual #15               // 调用toString方法  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        51: invokevirtual #16               // 调用println方法  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        54: iconst_0                        // 常量0入栈
+        55: istore        7                 // 取出栈顶至变量7
+        57: iload         7                 // 变量7入栈
+        59: iload_1                         // 变量1入栈
+        60: if_icmpge     87                // 如果变量1 >= 变量7 跳转至87行
+        63: getstatic     #8                // 获取类的静态字段，将其值压入栈顶  // Field java/lang/System.out:Ljava/io/PrintStream;
+        66: ldc           #17               // 将字符串"四则运算: num1 * num4 ="推送至栈顶  // String 四则运算: num1 * num4 =
+        68: invokevirtual #18               // 调用print方法输出栈顶元素  // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        71: getstatic     #8                // 获取类的静态字段，将其值压入栈顶  // Field java/lang/System.out:Ljava/io/PrintStream;
+        74: iload_1                         // 变量1入栈
+        75: iload         6                 // 变量6入栈
+        77: imul                            // 栈顶两个数据相乘并入栈
+        78: invokevirtual #19               // 调用println 输出栈顶元素  // Method java/io/PrintStream.println:(I)V
+        81: iinc          7, 1              // 变量7自增1 并入栈
+        84: goto          57                // 跳转至57行
+        87: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 2
+        line 7: 6
+        line 8: 11
+        line 9: 14
+        line 11: 24
+        line 13: 54
+        line 15: 63
+        line 16: 71
+        line 13: 81
+        line 18: 87
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           57      30     7     i   I
+            0      88     0  args   [Ljava/lang/String;
+            2      86     1  num1   I
+            6      82     2  num2   D
+           11      77     4  num3   J
+           14      74     6  num4   B
+      StackMapTable: number_of_entries = 3
+        frame_type = 255 /* full_frame */
+          offset_delta = 54
+          locals = [ class "[Ljava/lang/String;", int, double, long, int ]
+          stack = []
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 29
+}
+SourceFile: "Hello.java"
