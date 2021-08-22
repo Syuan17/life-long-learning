@@ -19,7 +19,7 @@ public class OkHttpDemo {
                 .build();
         try {
             Response response = client.newCall(request).execute();
-            System.out.println(response.body().toString());
+            System.out.println(response.body().string());
         } catch (IOException e) {
             e.printStackTrace();
         }
