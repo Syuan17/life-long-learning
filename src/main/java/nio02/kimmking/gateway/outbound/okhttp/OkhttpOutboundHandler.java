@@ -50,8 +50,10 @@ public class OkhttpOutboundHandler implements OutboundHandler {
         this.servers = servers;
     }
 
+    @Override
     public void handle(final FullHttpRequest fullRequest, final ChannelHandlerContext ctx, HttpRequestFilter filter) {
         String backendUrl = router.route(this.servers);
+        System.out.printf("url => [%s]\n", backendUrl);
         final String url = backendUrl + fullRequest.uri();
         filter.filter(fullRequest, ctx);
         proxyService.submit(()->send(fullRequest, ctx, url));
