@@ -1,6 +1,6 @@
 package com.halfhex.learning.autoconfigure;
 
-import com.halfhex.learning.autoconfigure.Service.DemoService;
+import com.halfhex.learning.autoconfigure.service.DemoService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

@@ -1,4 +1,4 @@
-package com.halfhex.learning.autoconfigure.Service;
+package com.halfhex.learning.autoconfigure.service;
 
 import com.halfhex.learning.autoconfigure.beans.ISchool;
 import com.halfhex.learning.autoconfigure.beans.Klass;
