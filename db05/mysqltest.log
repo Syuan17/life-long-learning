@@ -1,0 +1,19 @@
+2021-09-21 23:02:30,141 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 事务批量提交开始执行
+2021-09-21 23:05:07,732 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 事务批量提交 const => [157586]
+2021-09-21 23:05:07,732 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 分多次，使用线程池批量提交开始执行
+2021-09-21 23:05:07,741 [main-com.zaxxer.hikari.HikariDataSource]-[INFO] HikariPool-1 - Starting...
+2021-09-21 23:05:07,765 [main-com.zaxxer.hikari.HikariDataSource]-[INFO] HikariPool-1 - Start completed.
+2021-09-21 23:07:54,047 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 分多次，使用线程池批量提交 const => [166310]
+2021-09-21 23:07:54,112 [SpringApplicationShutdownHook-com.zaxxer.hikari.HikariDataSource]-[INFO] HikariPool-1 - Shutdown initiated...
+2021-09-21 23:07:54,124 [SpringApplicationShutdownHook-com.zaxxer.hikari.HikariDataSource]-[INFO] HikariPool-1 - Shutdown completed.
+2021-09-21 23:33:16,568 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 分多次，拼装SQL使用线程池提交开始执行 const => [61033]
+
+
+2021-09-21 23:28:56,107 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 初始化数据时间测试开始执行
+2021-09-21 23:28:56,660 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 初始化数据时间测试 cost => [552]
+2021-09-21 23:28:56,660 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 分多次，使用线程池异步批量提交开始执行
+2021-09-21 23:28:56,683 [task-1-com.zaxxer.hikari.HikariDataSource]-[INFO] HikariPool-1 - Starting...
+2021-09-21 23:28:56,895 [task-1-com.zaxxer.hikari.HikariDataSource]-[INFO] HikariPool-1 - Start completed.
+2021-09-21 23:29:32,109 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 分多次，使用线程池异步批量提交 const => [35449]
+2021-09-21 23:35:39,925 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 分多次，拼装SQL使用线程池异步提交开始执行 const => [14735]
+2021-09-21 23:42:10,935 [main-com.halfhex.learning.autoconfigure.LearningStarterDemoApplication]-[INFO] 事务批量异步提交 const => [34462]
